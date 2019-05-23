@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 #title{
     background-color:blue;
     text-align:center;
@@ -6,4 +10,10 @@
 
 body{
     background-color:#e3f2fd;
+}
+
+#mid{
+    border-style:bold;
+    border:5px;
+    text-align:center;
 }
