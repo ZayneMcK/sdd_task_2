@@ -20,3 +20,7 @@ body{
     padding-right:25%;
     margin-top: 380px;
 }
+
+#login {
+    text-align: center;
+}
