@@ -12,10 +12,10 @@
     <h1 id="title">Acadepic</h1>
     <br>
 
-    <form method="get" id="login">
+    <!-- <form method="get" id="login"> -->
         Enter Year Group: <input id="input_year" type="text" maxlength="2" />
 
-    </form>
+    <!-- </form> -->
     <!--  Submit Button if u want <input type="submit" value="Submit" /> -->
 
     <div id="below">
@@ -25,20 +25,39 @@
     </div>
 
     <script type="text/javascript">
-        var input_year = document.getElementById("input_year").value;
-        switch(input_year){
-          case 7:
-            window.open('Year 7/yr7homepage.html')
-          case 8:
-            window.open('Year 8/yr8homepage.html')
-          case 9:
-            window.open('Year 9/yr9homepage.html')
-          case 10:
-            window.open('Year 10/yr10homepage.html')
-          default:
-            window.open('Year 10/yr10homepage.html')
+        var input_year = document.querySelector("#input_year");
+        input_year.addEventListener('keyup', changeYearPage)
+
+        function changeYearPage(event) {
+          event.preventDefault
+          if(event.key == 'Enter') {
+            var year = input_year.value
+            if (year == '7') {
+              window.location = 'Year 7/yr7homepage.html'
+            } else if (year == '8') {
+              window.location = 'Year 8/yr8homepage.html'
+            } else if (year == '9') {
+              window.location = 'Year 9/yr9homepage.html'
+            } else if (year == '10') {
+              window.location = 'Year 10/yr10homepage.html'
+            } else {
+              alert('Wrong input. Try again')
+            }
+          }
         }
-// http://www.informit.com/articles/article.aspx?p=1642671&seqNum=2 link for website\\
+//         switch(input_year){
+//           case 7:
+//             window.open('Year 7/yr7homepage.html')
+//           case 8:
+//             window.open('Year 8/yr8homepage.html')
+//           case 9:
+//             window.open('Year 9/yr9homepage.html')
+//           case 10:
+//             window.open('Year 10/yr10homepage.html')
+//           default:
+//             document.writeln("Test")
+//         }
+// // http://www.informit.com/articles/article.aspx?p=1642671&seqNum=2 link for website\\
 
       </script>
 </body>
