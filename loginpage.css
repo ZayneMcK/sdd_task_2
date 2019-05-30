@@ -3,8 +3,11 @@
 }
 
 #title{
+    color:white;
     background-color:blue;
     text-align:center;
+    padding-top:5px;
+    padding-bottom:5px;
 }
 
 

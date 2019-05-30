@@ -10,7 +10,7 @@
 </head>
 <body>
     
-    <h1 id="title">Acadepic</h1>
+    <h1 id="title"><strong>Acadepic</strong></h1>
     <br>
 
     <!-- <form method="get" id="login"> -->
@@ -24,40 +24,54 @@
         <p>Acadepic Website is a school learning based tool! We aim to teach students from year groups 7-10 about  Mathematics, Science and English. Within these three subects you will be able to go through the Syllabus of your chosen subject, go through lessons with video tutorials, go through practice tests in order to help develop your learning to allow you to develop as a student of ... as well as experience online learning at it's finest.</p>
 
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script type="text/javascript">
         var input_year = document.querySelector("#input_year");
         input_year.addEventListener('keyup', changeYearPage)
 
+        // function changeYearPage(event) {
+        //   event.preventDefault
+        //   if(event.key == 'Enter') {
+        //     var year = input_year.value
+        //     if (year == '7') {
+        //       window.location = 'Year 7/yr7homepage.html'
+        //     } else if (year == '8') {
+        //       window.location = 'Year 8/yr8homepage.html'
+        //     } else if (year == '9') {
+        //       window.location = 'Year 9/yr9homepage.html'
+        //     } else if (year == '10') {
+        //       window.location = 'Year 10/yr10homepage.html'
+        //     } else {
+        //       alert('Wrong input. Try again')
+        //     }
+        //   }
+        // }
         function changeYearPage(event) {
           event.preventDefault
-          if(event.key == 'Enter') {
-            var year = input_year.value
-            if (year == '7') {
-              window.location = 'Year 7/yr7homepage.html'
-            } else if (year == '8') {
-              window.location = 'Year 8/yr8homepage.html'
-            } else if (year == '9') {
-              window.location = 'Year 9/yr9homepage.html'
-            } else if (year == '10') {
-              window.location = 'Year 10/yr10homepage.html'
-            } else {
-              alert('Wrong input. Try again')
-            }
-          }
-        }
-//         switch(input_year){
-//           case 7:
-//             window.open('Year 7/yr7homepage.html')
-//           case 8:
-//             window.open('Year 8/yr8homepage.html')
-//           case 9:
-//             window.open('Year 9/yr9homepage.html')
-//           case 10:
-//             window.open('Year 10/yr10homepage.html')
-//           default:
-//             document.writeln("Test")
-//         }
+            if(event.key == 'Enter') {
+              var year = Number(input_year.value)
+                switch(year){
+                  case 7:
+                    window.location = 'Year 7/yr7homepage.html'
+                    break
+                  case 8:
+                    window.location = 'Year 8/yr8homepage.html'
+                    break
+                  case 9:
+                    window.location = 'Year 9/yr9homepage.html'
+                    break
+                  case 10:
+                    window.location = 'Year 10/yr10homepage.html'
+                    break
+                  default:
+                  Swal.fire(
+                      'Wrong Input!',
+                      'Enter a valid year group.',
+                      'error'
+                    )
+                  }
+                }
+              }
 // // http://www.informit.com/articles/article.aspx?p=1642671&seqNum=2 link for website\\
 
       </script>
