@@ -13,18 +13,19 @@
     <h1 id="title">Acadepic</h1>
     <br>
 
-    <form id ="login">
-        Enter Year Group: <input type="text" input="year group" value="7">
-
-
+    <form method="get" id="login">
+        Enter Year Group: <input id="input_year" type="text" maxlength="2" />
 
     </form>
+    <!--  Submit Button if u want <input type="submit" value="Submit" /> -->
+
     <div id="below">
         <h2>About us</h2>
         <p>Acadepic Website is a school learning based tool! We aim to teach students from year groups 7-10 about  Mathematics, Science and English. Within these three subects you will be able to go through the Syllabus of your chosen subject, go through lessons with video tutorials, go through practice tests in order to help develop your learning to allow you to develop as a student of ... as well as experience online learning at it's finest.</p>
 
     </div>
 
+<<<<<<< HEAD
     <div> 
         <script type="text/javascript">
         
@@ -37,6 +38,22 @@
             case 9:
             case 10:
 8           }
+=======
+    <script type="text/javascript">
+        var input_year = document.getElementById("input_year").value;
+        switch(input_year){
+          case 7:
+            window.open('Year 7/yr7homepage.html')
+          case 8:
+            window.open('Year 8/yr8homepage.html')
+          case 9:
+            window.open('Year 9/yr9homepage.html')
+          case 10:
+            window.open('Year 10/yr10homepage.html')
+          default:
+            window.open('Year 10/yr10homepage.html')
+        }
+>>>>>>> 91dbb6887b532ebe002c4bfb555462b24167103b
 // http://www.informit.com/articles/article.aspx?p=1642671&seqNum=2 link for website\\
 
       </script>
