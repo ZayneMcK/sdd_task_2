@@ -13,3 +13,8 @@ body{
     margin-right:20%;
     color:rgb(39, 39, 39)
 }
+
+#video{
+    text-align: center;
+    padding-bottom:10px;
+}
