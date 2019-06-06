@@ -49,3 +49,8 @@ body{
     text-align: center;
     padding-bottom:10px;
 }
+
+#title{
+  font-size:35px ;
+  text-align: center;
+}

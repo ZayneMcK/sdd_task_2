@@ -42,3 +42,8 @@ body{
     background-color: #008CBA;
     color: white;
   }
+
+  #title{
+    font-size:35px ;
+    text-align: center;
+}
