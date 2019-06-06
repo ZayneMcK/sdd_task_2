@@ -7,3 +7,47 @@ body{
     text-align: center;
 }
 
+#move{
+    text-align:center;
+    margin-top:20px;
+}
+
+.math-button {
+    padding: 16px 32px;
+    background-color: #e3f2fd; 
+    color: black; 
+    border: 3px solid #008CBA;
+  }
+  
+  .math-button:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+
+.eng-button {
+    padding: 16px 32px;  
+    background-color: #e3f2fd; 
+    color: black; 
+    border: 3px solid #008CBA;
+  }
+  
+  .eng-button:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+
+.sci-button {
+    padding: 16px 32px;
+    background-color: #e3f2fd; 
+    color: black; 
+    border: 3px solid #008CBA;
+  }
+  
+  .sci-button:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+
+.eng-bg {
+    background-color: white;
+}

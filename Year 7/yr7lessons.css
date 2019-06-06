@@ -43,7 +43,11 @@ body{
     color: white;
   }
 
-  #title{
+  #title {
     font-size:35px ;
     text-align: center;
+}
+
+.eng-bg {
+    background-color: white;
 }
