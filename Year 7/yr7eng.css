@@ -18,3 +18,28 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
+.question {
+    width: 70%;
+    text-align: center;
+    height: 250px;
+}
+
+.options {
+    width: 40%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.optionA, .optionB {
+    height: 100%;
+}
+
+.results {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
