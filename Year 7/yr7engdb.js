@@ -30,33 +30,33 @@ database = [
         answer: 'B'
     },
     {
-        question: 'When and where a story takes place is known as _____?',
-        optionA: 'Setting',
-        optionB: 'Place',
+        question: 'Select the most correct definition for the word: “Abandon”',
+        optionA: 'To leave someone or something',
+        optionB: 'To stop fighting',
         answer: 'A'
     },
     {
-        question: 'The feeling a story gives is known as _____?',
-        optionA: 'Imagery',
-        optionB: 'Mood',
+        question: 'Select the most correct definition for the word: “Accumulate”',
+        optionA: 'To stop doing nice things',
+        optionB: 'To collect or gather',
         answer: 'B'
     },
     {
-        question: 'The problem in a story is known as _____?',
-        optionA: 'Foreground',
-        optionB: 'Conflict',
+        question: 'Select the most correct definition for the word: “Academy”',
+        optionA: 'A place to play',
+        optionB: 'A school',
         answer: 'B'
     },
     {
-        question: 'What is the closest part of an image known as?',
-        optionA: 'Background',
-        optionB: 'Foreground',
+        question: 'Select the most correct definition for the word: “Adapt”',
+        optionA: 'A place to train',
+        optionB: 'To change or adjust',
         answer: 'B'
     },
     {
-        question: 'What is the furthest part of an image known as?',
-        optionA: 'Background',
-        optionB: 'Foreground',
+        question: 'Select the most correct definition for the word: “Activate”',
+        optionA: 'To start something',
+        optionB: 'To stop something',
         answer: 'A'
     }
 ]
