@@ -48,7 +48,7 @@
         })
         swalWithBootstrapButtons.fire({
           title: 'Are you sure?',
-          text: "You won't be able to revert this!",
+          text: "",
           type: 'warning',
           showCancelButton: true,
           confirmButtonText: 'Go home',
@@ -56,7 +56,7 @@
           reverseButtons: true
         }).then((result) => {
           if (result.value) {
-            window.location.replace('https://www.google.com/?safe=active&ssui=on')
+            window.location.replace('../loginpage.html')
           } else if (
             // Read more about handling dismissals
             result.dismiss === Swal.DismissReason.cancel
