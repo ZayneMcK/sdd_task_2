@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Acadepic</title>
     <link rel="stylesheet" href="loginpage.css">
-    <link rel="stylesheet" href="loginpage.js">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body id="bd">
@@ -24,30 +23,36 @@
           our students grow and nurture their skills and abilities as they continue 
           their educational journey.</p>
           <p><b>Choose your year group:</b></p>
-    <div id="year">
-        <input type="radio" id="r1" name="Year 7" value="7"> Year 7 <br>
-        <input type="radio" id="r2" name="Year 8" value="8"> Year 8 <br>
-        <input type="radio" id="r3" name="Year 9" value="9"> Year 9 <br>
-        <input type="radio" id="r4" name="Year 10" value="10"> Year 10 <br>
+    <div>
+        <input type="radio" name="year" value="7" onclick="func();">Year 7 <br>
+        <input type="radio" name="year" value="8" onclick="func();">Year 8 <br>
+        <input type="radio" name="year" value="9" onclick="func();">Year 9 <br>
+        <input type="radio" name="year" value="10" onclick="func();">Year 10 <br>
     </div>
-
   </div>
     <script>
-      var year = document.getElementById('year').value;
-      var year_value;
-      if(years =='Fixed Rate'){
-          rate_value = document.getElementById('r1').value;
-
-      }else if(rates =='Variable Rate'){
-          rate_value = document.getElementById('r2').value;
-
-      }else if(rates =='Multi Rate'){
-          rate_value = document.getElementById('r3').value;
-      }  
-      document.getElementById('results').innerHTML = rate_value;
+      function func()
+      {
+        var year = document.getElementsByName('year');
+        if(year[0].checked)
+        {
+          window.location.assign('year 7/yr7homepage.html')
+        }
+        else if(year[1].checked)
+        {
+          window.location.assign('year 8/yr8homepage.html')
+        }
+        else if(year[2].checked)
+        {
+          window.location.assign('year 9/yr9homepage.html')
+        }
+        else if(year[3].checked)
+        {
+          window.location.assign('year 10/yr10homepage.html')
+        }
+      }
+      
     </script>
-
-    <!--<div id="yeargroup">Enter Year Group: <input id="input_year" type="text" maxlength="2" /></div>-->
         
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
